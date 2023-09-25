@@ -1,0 +1,16 @@
+#wrap {
+    width: 600px;
+    margin: auto;
+}
+.news {
+    margin-top : 70px;
+    border-radius: 30px;
+    border: 20px solid #5882FA;
+    padding : 50px;
+}
+.naver {
+    margin-top : 50px;
+    border-radius: 30px;
+    border: 20px solid #3ADF00;
+    padding : 50px;
+}

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+    <ul>
+    {% for i in daum_list %}
+        <a href={{search_list_src[i]}}></a>
+            <li>
+                {{ i }}
+            </li>
+        </a>
+    {% endfor %}
+    </ul>    
+
+    <a href="static/result.xlsx">다운로드 버튼</a>
+</body>
+</html>

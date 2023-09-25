@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+    
+    <ul>
+    {% for i in range(0,len) %}
+        
+        <li>{{ search_list[i] }}</li>
+        <li><img src={{search_list_src[i]}}></li>
+    {% endfor %}
+    </ul>
+</body>
+</html>

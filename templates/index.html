@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+    <script src="https ://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    
+    <link rel='stylesheet', href={{ url_for('static', filename='css/index.css')}}>
+
+</head>
+<body>
+    <div id='wrap'>
+        <div>
+            <div class="news">
+                <form action='/result' method='POST'> 
+                    <div class="form-group"> 
+                        <h1>Daum 크롤링 키워드 입력</h1>
+                        <label for="exampleInputEmail1">크롤링 키워드</label>
+                        <input type="text" class="form-control" name='input1' placeholder="키워드를 입력해주세요">
+                    </div>
+                    <div class="form-group">
+                        <h1>페이지 입력</h1>
+                        <label for="exampleInputPassword1">페이지 수</label>
+                        <input type="number" class="form-control" name='input2' placeholder="페이지수를 입력해주세요">
+                    </div>
+                    <button type="submit" class="btn btn-default">제출</button>                    
+                </form>
+            </div>
+        </div>
+
+        <div>
+            <div class="naver">
+                <form action = "/naver_shopping" method='POST'>                   
+                    <h1> 네이버 쇼핑 크롤링 </h1>
+                    <div class="form-group">
+                        <input type="text" class="form-control" name='input3'>
+                    </div>
+                    <button type="submit" class="btn btn-default"> 네이버 쇼핑 크롤링 셀레니움 </button>
+                </form>    
+            </div>
+        </div>
+    </div>
+</body>
+</html>
